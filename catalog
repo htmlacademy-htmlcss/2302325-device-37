@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Девайс \ Главная</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <nav class="nav page-nav">
+        <a class="logo nav-logo" href="index.html" aria-current="page">
+          <img src="#" alt="Логотип «Девайс»">
+        </a>
+
+        <form class="page-search" action="#" method="post">
+          <input type="search" placeholder="Поиск по сайту">
+        </form>
+        <button class="button button-search" type="button"> Найти</button>
+        <ul class="user-list list-reset">
+          <li class="user-item">
+            <a class="user-link user-link-login" href="#">Войти</a>
+          </li>
+          <li class="user-item">
+            <a class="user-link user-link-compare" href="#">Сравнить</a>
+          </li>
+          <li class="user-item">
+            <a class="user-link user-link-basket" href="#">Корзина</a>
+            <span class="number">2</span>
+          </li>
+        </ul>
+
+        <ul class="nav-list list-reset">
+          <li class="nav-item nav-catalog">
+            <a class="nav-link nav-link-catalog" href="#">Каталог товаров</a>
+            <ul class="subcatalog list-reset">
+              <li class="subcatalog-item">
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li class="subcatalog-item">
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li class="subcatalog-item">
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li class="subcatalog-item">
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="subcatalog-item">
+                <a href="#">Умные часы</a>
+              </li>
+              <li class="subcatalog-item">
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Доставка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Гарантия</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main></main>
+
+    <footer class="page-footer">
+      <a class="logo nav-logo" href="index.html" aria-current="page">
+        <img src="#" alt="Логотип «Девайс»">
+      </a>
+      <address class="address-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+
+      <ul class="nav-list nav-list-footer list-reset">
+        <li class="nav-item">
+          <a class="nav-link nav-link-footer" href="#"> Доставка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-footer" href="#">Гарантия</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-footer" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <!--СОЦ.СЕТИ-->
+
+      <ul class="social-list list-reset">
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">Телеграм</span>
+            <svg></svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">Youtube</span>
+            <svg></svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">Твиттер</span>
+            <svg></svg>
+          </a>
+        </li>
+      </ul>
+
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+
+      <a class="footer-dev" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">Сайт разработчика</span>
+        <svg></svg>
+      </a>
+    </footer>
+
+  </body>
+
+</html>
