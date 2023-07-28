@@ -18,7 +18,7 @@
           <input type="search" placeholder="Поиск по сайту">
         </form>
         <button class="button button-search" type="button"> Найти</button>
-        <Ul class="user-list list-reset">
+        <ul class="user-list list-reset">
           <li class="user-item">
             <a class="user-link user-link-login" href="#">Войти</a>
           </li>
@@ -29,7 +29,7 @@
             <a class="user-link user-link-basket" href="#">Корзина</a>
             <span class="number">2</span>
           </li>
-        </Ul>
+        </ul>
 
         <ul class="nav-list list-reset">
           <li class="nav-item nav-catalog">
@@ -114,7 +114,8 @@
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 товар
+              <span class="visually-hidden">2 товар</span>
+            </button>
           </li>
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
@@ -208,7 +209,7 @@
         <h2 class="visually-hidden">Условия покупки</h2>
         <ul class="all-conditions list-reset">
           <li class="conditions-item">
-            <button class="button  button-dark conditions-button-current" type="button">Доставка</button>
+            <button class="button  button-line conditions-button-current" type="button">Доставка</button>
             <h3 class="title title-conditions">Доставка</h3>
             <p class="description description-conditions">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
@@ -234,17 +235,107 @@
 
       <section class="delivery">
         <h2 class="visually-hidden">Доставка под заказ</h2>
+        <a class="button button-modal" type="button" href="#">Доставим редкий товар под заказ</a>
+        <!--<div class="tooltip">
+            <button class="tooltip-toggle" type="button" aria-labelledby="delivery-info">
+              <span class="visually-hidden">Дополнительная информация</span>
+            </button>
+            <p class="tooltip-text" id="delivery-info"></p>
+          </div>-->
       </section>
 
-      <section class="about-us"></section>
+      <!--О НАС-->
 
-      <section class="contacts"></section>
+      <section class="about-us">
+        <h2 class="title title-about-us">О нас</h2>
+        <p class="description description-about-us">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="description description-about-us">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+        <ul class="delivery-list list-reset">
+          <li class="delivery-item">Меловые линии</li> <!--Возможно ссылкии на страницу компаний?!-->
+          <li class="delivery-item">СДИК</li>
+          <li class="delivery-item">ТоксБерри</li>
+        </ul>
+        <a class="button  button-line" type="button" href="#">Подробнее о нас</a>
+      </section>
 
-      <section class="mailing"></section>
+      <!--КОНТАКТЫ-->
+
+      <section class="contacts">
+        <h2 class="title title-contacts">Контакты</h2>
+        <p class="description description-contacts">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+        <h3 class="title subtitle">Интернет-магазин «Девайс»</h3>
+        <address class="description description-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <h3 class="title subtitle">Время работы</h3>
+        <ul class="work-time list-reset">
+          <li class="work-time-item">пн—пт: с 10:00 до 22:0</li>
+          <li class="work-time-item">сб—вс: с 10:00 до 19:00</li>
+        </ul>
+
+        <a class="button  button-line" type="button" href="#">Напишите нам</a>
+      </section>
+
+      <!--РАССЫЛКА-->
+
+      <section class="subscribe">
+        <h2 class="title title-subscribe">Подпишитесь на рассылку</h2>
+        <p class="description description-subscribe">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции спецпредложения и вот это вот всё.</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden" for="subscribe-email">Ваш email</label>
+          <input class="subscribe-input form-input" id="subscribe-email" name="subscribe-email" type="email" placeholder="Ваш e-mail" required>
+          <button class="subscribe-button button button-light" type="submit">Подписаться</button>
+        </form>
+        <span class="free">Это бесплатно</span>
+      </section>
 
     </main>
 
     <footer class="page-footer"></footer>
+    <a class="logo nav-logo" href="index.html" aria-current="page">
+      <img src="#" alt="Логотип «Девайс»">
+    </a>
+    <address class="address-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+
+    <ul class="nav-list nav-list-footer list-reset">
+      <li class="nav-item">
+        <a class="nav-link nav-link-footer" href="#"> Доставка</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-footer" href="#">Гарантия</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-footer" href="#">Контакты</a>
+      </li>
+    </ul>
+
+    <!--СОЦ.СЕТИ-->
+
+    <ul class="social-list list-reset">
+      <li class="social-item">
+        <a class="social-link" href="#">
+          <span class="visually-hidden">Телеграм</span>
+          <svg></svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link" href="#">
+          <span class="visually-hidden">Youtube</span>
+          <svg></svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link" href="#">
+          <span class="visually-hidden">Твиттер</span>
+          <svg></svg>
+        </a>
+      </li>
+
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+
+      <a class="footer-dev" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">Сайт разработчика</span>
+        <svg></svg>
+      </a>
 
   </body>
 
