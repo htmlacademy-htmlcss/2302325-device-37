@@ -15,12 +15,15 @@
         </a>
 
         <form class="page-search" action="#" method="post">
-          <input type="search" placeholder="Поиск по сайту">
+          <input type="search" placeholder="Текст поиска">
         </form>
         <button class="button button-search" type="button"> Найти</button>
         <ul class="user-list list-reset">
           <li class="user-item">
-            <a class="user-link user-link-login" href="#">Войти</a>
+            <a class="user-link user" href="">Коля Петухов</a>
+          </li>
+          <li class="user-item">
+            <button class="enter" type="reset">Выйти</button>
           </li>
           <li class="user-item">
             <a class="user-link user-link-compare" href="#">Сравнить</a>
@@ -70,7 +73,184 @@
 
     </header>
 
-    <main></main>
+    <main>
+      <h1 class="visually-hidden">Каталог товаров</h1>
+      <h2 class="title title-catalog">Моноподы для селфи</h2>
+
+      <!--ХЛЕБНЫЕ КРОШКИ-->
+
+      <ul class="breadcrumbs-list list-reset">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html" aria-current="page">Моноподы для селфи</a>
+        </li>
+      </ul>
+
+      <section class="filter">
+        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-group filter-group-range">
+            <legend class="filter-title">Стоимость, ₽:</legend>
+            <div class="range-scale">
+              <div class="range-bar" style="width: 70%;">
+                <button class="range-toggle-btn range-toggle-btn-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+                <button class="range-toggle-btn range-toggle-btn-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену</span>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter-group filter-group-check">
+            <legend class="filter-title">Цвет</legend>
+
+            <ul class="filter-list control-list list-reset">
+              <li class="control-item">
+                <input class="control-input" id="black" name="black" type="checkbox" checked>
+                <label class="control-label" for="black">Черный</label>
+              </li>
+
+              <li class="control-item">
+                <input class="control-input" id="white" name="white" type="checkbox" checked>
+                <label class="control-label" for="white">Белый</label>
+              </li>
+
+              <li class="control-item">
+                <input class="control-input" id="blue" name="blue" type="checkbox">
+                <label class="control-label" for="blue">Синий</label>
+              </li>
+
+              <li class="control-item">
+                <input class="control-input" id="red" name="red" type="checkbox">
+                <label class="control-label" for="red">Красный</label>
+              </li>
+
+              <li class="control-item">
+                <input class="control-input" id="pink" name="pink" type="checkbox">
+                <label class="control-label" for="pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter-group filter-group-radio">
+            <legend class="filter-title">Bluetooth</legend>
+
+            <ul class="filter-list control-list list-reset">
+              <li class="control-item">
+                <input class="control-input" id="yes" name="yes" type="radio" value="have" checked>
+                <label class="control-label" for="yes">Есть</label>
+              </li>
+
+              <li class="control-item">
+                <input class="control-input" id="no" name="no" type="radio" value="havent">
+                <label class="control-label" for="no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button button-line button-filter" type="submit">Показать</button>
+
+        </form>
+      </section>
+
+      <section class="products">
+
+        <div class="sorting">
+          <select class="sorting-select" aria-label="Сортировка">
+            <option value="inexpensive" selected>Популярные</option>
+            <option value="inexpensive">Дешевые</option>
+            <option value="expensive">Дорогие</option>
+          </select>
+        </div>
+
+        <div class="monopods">
+          <ul class="monopods-list list-reset">
+            <li class="monopods-item">
+              <a class="hotels-link" href="#">
+                <figure class="monopods-img">
+                  <img src="#" width="360px" height="380px" alt="Любительская селфи-палка">
+                  <a class="button button-line button-image" type="button">Подробнее</a>
+                </figure>
+                <h3 class="title title-products">Любительская селфи-палка</h3>
+                <span class="price">500 ₽</span>
+              </a>
+            </li>
+
+            <li class="monopods-item">
+              <a class="hotels-link" href="#">
+                <figure class="monopods-img">
+                  <img src="#" width="360px" height="380px" alt="Профессиональная селфи-палка ">
+                  <a class="button button-line button-image" type="button">Подробнее</a>
+                  <span class="new">NEW</span>
+                </figure>
+                <h3 class="title title-products">Профессиональная селфи-палка</h3>
+                <span class="price">1500 ₽</span>
+              </a>
+            </li>
+
+            <li class="monopods-item">
+              <a class="hotels-link" href="#">
+                <figure class="monopods-img">
+                  <img src="#" width="360px" height="380px" alt="Непотопляемая селфи-палка">
+                  <a class="button button-line button-image" type="button">Подробнее</a>
+                </figure>
+                <h3 class="title title-products">Непотопляемая селфи-палка</h3>
+                <span class="price">2500 ₽</span>
+              </a>
+            </li>
+
+            <li class="monopods-item">
+              <a class="hotels-link" href="#">
+                <figure class="monopods-img">
+                  <img src="#" width="360px" height="380px" alt="Селфи-палка «Следуй за мной»">
+                  <a class="button button-line button-image" type="button">Подробнее</a>
+                </figure>
+                <h3 class="title title-products">Селфи-палка «Следуй за мной»</h3>
+                <span class="price">500 ₽</span>
+              </a>
+            </li>
+          </ul>
+
+          <button class="button button-light button-loading" type="button">Загрузить ещё</button>
+
+          <!--ПАГИНАЦИЯ-->
+          <div class="pagination">
+            <button class="button button-pagination button-pagination-pre" type="button">Назад</button>
+            <ul class="pagination-list list-reset">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-link-current" href="#" aria-current="page">1</a>
+              </li>
+
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+
+              <li class="pagination-item">
+                <a class="pagination-link pagination-link-more" href="#" aria-label="Следующая страница">...</a>
+              </li>
+
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">15</a>
+              </li>
+            </ul>
+            <button class="button button-pagination button-pagination-next" type="button">Вперёд</button>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
 
     <footer class="page-footer">
       <a class="logo nav-logo" href="index.html" aria-current="page">
