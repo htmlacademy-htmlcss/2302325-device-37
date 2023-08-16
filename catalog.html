@@ -13,14 +13,15 @@
     <header class="header">
       <div class="container header-container">
 
-        <a class="logo nav-logo" href="index.html">
+        <a class="header-logo" href="index.html">
           <img src="images/logo.svg" alt="Логотип «Девайс»" width="145" height="36">
         </a>
 
         <div class="header-user-container">
           <form class="search header-search" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input class="form-input search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+            <label class="search-label" for="search">
+              <input class="form-input search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+            </label>
 
             <button class="button button-dark button-search" type="submit"> Найти</button>
           </form>
@@ -52,34 +53,34 @@
                 <span class="nav-catalog-plus"></span>
               </a>
             </li>
-            <div class="submenu"></div>
-            <ul class="submenu-list  submenu-list-video list-reset">
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Моноподы для селфи</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Экшн-камеры</a>
-              </li>
-            </ul>
+            <div class="submenu">
+              <ul class="submenu-list  submenu-list-video list-reset">
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
 
-            <ul class="submenu-list  submenu-list-watch list-reset">
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Умные часы</a>
-              </li>
-            </ul>
+              <ul class="submenu-list  submenu-list-watch list-reset">
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Умные часы</a>
+                </li>
+              </ul>
 
-            <ul class="submenu-list  submenu-list-quadrocopter list-reset"></ul>
-            <li class="submenu-item">
-              <a class="submenu-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-          <ul>
+              <ul class="submenu-list  submenu-list-quadrocopter list-reset">
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
             <li class="nav-item">
               <a class="nav-link" href="#"> Доставка</a>
             </li>

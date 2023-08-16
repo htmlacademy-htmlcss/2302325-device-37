@@ -13,14 +13,15 @@
     <header class="header">
       <div class="container header-container">
 
-        <a class="logo nav-logo" href="index.html" aria-current="page">
+        <a class="header-logo" href="index.html" aria-current="page">
           <img src="images/logo.svg" alt="Логотип «Девайс»" width="145" height="36">
         </a>
 
         <div class="header-user-container">
           <form class="search header-search" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input class="form-input search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+            <label class="search-label" for="search">
+              <input class="form-input search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+            </label>
 
             <button class="button button-dark button-search" type="submit"> Найти</button>
           </form>
@@ -43,7 +44,7 @@
 
         <nav class="nav">
           <ul class="nav-list list-reset">
-            <li class="nav-item nav-item-catalog">
+            <li class="nav-item nav-item-catalog nav-item-catalog-active">
               <a class="nav-link nav-link-catalog" href="catalog.html">Каталог товаров
                 <span class="nav-catalog-plus"></span>
               </a>
@@ -114,12 +115,13 @@
 
                 <dl class="slider-params">
                   <div class="slider-params-item">
-                    <dt class="slider-key">800м</dt>
-                    <dd class="slider-value">Дальность полёта</dd>
+                    <dt class="slider-key">Дальность полёта</dt>
+                    <dd class="slider-value">800 м</dd>
                   </div>
+
                   <div class="slider-params-item">
-                    <dt class="slider-key">50м</dt>
-                    <dd class="slider-value">Радиус поражения</dd>
+                    <dt class="slider-key">Радиус поражения</dt>
+                    <dd class="slider-value">50 м</dd>
                   </div>
                 </dl>
 
@@ -137,13 +139,14 @@
                 <p class="text slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <a class="button button-line slider-button" type="button" href="#">Подробнее</a>
 
-                <dl class="slider-params">
-                  <div class="slider-params-item">
-                    <dt class="slider-key">48 часов</dt>
-                    <dd class="slider-value">Без подзарядки</dd>
-                  </div>
-
-                </dl>
+                <div>
+                  <dl class="slider-params">
+                    <div class="slider-params-item">
+                      <dt class="slider-key">Без подзарядки</dt>
+                      <dd class="slider-value">48 часов</dd>
+                    </div>
+                  </dl>
+                </div>
 
               </div>
             </li>
@@ -155,24 +158,28 @@
               </div>
 
               <div class="slider-content">
-                <p class="title slider-title">ПДелай селфи, как Бен Стиллер!</p>
+                <p class="title slider-title">Делай селфи, как Бен Стиллер!</p>
                 <p class="text slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                 <a class="button button-line slider-button" type="button" href="#">Подробнее</a>
 
-                <dl class="slider-params">
-                  <div class="slider-params-item">
-                    <dt class="slider-key">8,5 м</dt>
-                    <dd class="slider-value">Длина палки</dd>
-                  </div>
-                  <div>
-                    <dt class="slider-key">5 кг</dt>
-                    <dd class="slider-value">Вес палки</dd>
-                  </div>
-                  <div class="slider-params-item">
-                    <dt class="slider-key">Карбон</dt>
-                    <dd class="slider-value">Материал</dd>
-                  </div>
-                </dl>
+                <div>
+                  <dl class="slider-params">
+                    <div class="slider-params-item">
+                      <dt class="slider-key">Длина палки</dt>
+                      <dd class="slider-value">8,5 м</dd>
+                    </div>
+
+                    <div class="slider-params-item">
+                      <dt class="slider-key">Вес палки</dt>
+                      <dd class="slider-value">5 кг</dd>
+                    </div>
+
+                    <div class="slider-params-item">
+                      <dt class="slider-key">Материал</dt>
+                      <dd class="slider-value">Карбон</dd>
+                    </div>
+                  </dl>
+                </div>
 
               </div>
             </li>
