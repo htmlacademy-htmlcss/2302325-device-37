@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Девайс \ Главная</title>
 
+    <link rel="icon" href="favicon.svg">
+
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -37,7 +39,39 @@
               <a class="user-link user-link-cart" href="#">Корзина
                 <span class="user-link-number">2</span>
               </a>
-              <!--<Блок с корзиной-->
+              /* КОРЗИНА*/
+
+              <div class="cart-container">
+                <ul class="cart-list list-reset">
+                  <li class="cart-item">
+                    <a class="cart-item-link" href="#">
+                      <img class="cart-item-photo" src="images/cart-items/self.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                      <h3 class="cart-item-title">Любительская селфи-палка</h3>
+                    </a>
+                    <button class="cart-button-delete" type="button">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <a class="cart-item-link" href="#">
+                      <img class="cart-item-photo" src="images/cart-items/profi-self.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                      <h3 class="cart-item-title">Профессиональная селфи-палка</h3>
+                    </a>
+                    <button class="cart-button-delete" type="button">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="cart-result">
+                  <p class="cart-product">Товаров: 2</p>
+                  <p class="cart-price">Сумма: 2000 ₽</p>
+                </div>
+                <div class="cart-open">
+                  <a class="button cart-button" type="button" href="#">Открыть корзину</a>
+                </div>
+              </div>
+
             </li>
           </ul>
         </div>
@@ -302,35 +336,38 @@
       <!--О НАС-->
 
       <div class="container about-company-container">
-        <section class="about">
-          <h2 class="title title-about">О нас</h2>
-          <p class="text text-about">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="text text-about">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+        <section class="info about-info">
+          <h2 class="title info-title">О нас</h2>
+          <p class="text info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="text info-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="delivery-list list-reset">
             <li class="delivery-item">Меловые линии</li>
             <li class="delivery-item">СДИК</li>
             <li class="delivery-item">ТоксБерри</li>
           </ul>
 
-          <a class="button  button-line button-about" type="button" href="#">Подробнее о нас</a>
+          <a class="button  button-line info-button button-about" type="button" href="#">Подробнее о нас</a>
         </section>
 
         <!--КОНТАКТЫ-->
 
-        <section class="contacts">
-          <h2 class="title title-contacts">Контакты</h2>
+        <section class="info contacts-info">
+          <h2 class="title info-title">Контакты</h2>
           <p class="text text-contacts">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
-
-          <address class="contacts-info">
+          <div class="adress">
             <h3 class="title address-title">Интернет-магазин «Девайс»</h3>
-            <p class="text text-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
+            <address class="address-info">
+              <p class="address-text info-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <a class="address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </address>
+          </div>
 
-          <h3 class="title contacts-worktime-title">Время работы</h3>
-          <p class="text text-worktime">пн—пт: с 10:00 до 22:0<br>сб—вс: с 10:00 до 19:00</p>
+          <div class="worktime">
+            <h3 class="title contacts-worktime-title">Время работы</h3>
+            <p class="text info-text">пн—пт: с 10:00 до 22:0<br>сб—вс: с 10:00 до 19:00</p>
+          </div>
 
-          <a class="button  button-line button-contacts" type="button" href="#">Напишите нам</a>
+          <a class="button  button-line info-button button-contacts" type="button" href="#">Напишите нам</a>
         </section>
       </div>
 
@@ -344,7 +381,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
             <label class="visually-hidden" for="subscribe-email">Введите Ваш email</label>
             <input class="form-input subscribe-input" id="subscribe-email" name="subscribe-email" type="email" placeholder="Ваш e-mail" required>
-            <button class=" button  subscribe-button" type="submit">Подписаться</button>
+            <button class=" button button-dark  subscribe-button" type="submit">Подписаться</button>
           </form>
 
           <span class="subscribe-hint">Это бесплатно</span>
@@ -376,7 +413,7 @@
             </li>
           </ul>
 
-          <a class="phone footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="address-phone footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
           <!--СОЦ.СЕТИ-->
 
