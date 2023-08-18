@@ -4,7 +4,8 @@
   font-family: "Raleway";
 
   font-display: swap;
-  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2"),
+    url("../fonts/raleway/raleway-800.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +14,8 @@
   font-family: "Rubik";
 
   font-display: swap;
-  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2"),
+    url("../fonts/rubik/rubik-400.woff") format("woff");
 }
 
 @font-face {
@@ -22,7 +24,8 @@
   font-family: "Raleway";
 
   font-display: swap;
-  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2"),
+    url("../fonts/rubik/rubik-700.woff") format("woff");
 }
 
 :root {
