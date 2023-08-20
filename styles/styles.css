@@ -1332,16 +1332,18 @@ img {
   display: grid;
   align-items: center;
 
-  gap: 144px 50px;
+  gap: 144px 52px;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .title-subscribe {
+  padding-left: 7px;
+
   grid-column: 1 / span 2;
 }
 
 .text-subscribe {
-  margin: 0;
+  margin: 10px 0 0;
 
   grid-column: span 2/-1;
 }
@@ -1357,7 +1359,7 @@ img {
 .subscribe-input {
   display: block;
   width: 100%;
-  padding: 10px 17px;
+  padding: 30px 17px;
 
   font-size: 18px;
   line-height: 30px;
@@ -1370,17 +1372,42 @@ img {
   opacity: 0.5;
 }
 
+.subscribe-input:hover,
+.subscribe-input:focus {
+  background-color: #dcdcdc;
+  outline: none;
+}
+
+.subscribe-input-error {
+  border-color: #ff3d3d;
+}
+
+.subscribe-input:disabled {
+  opacity: 0.3;
+
+  pointer-events: none;
+}
+
 .subscribe-button {
   width: 252px;
   padding: 15px;
 
-  border: 3px solid #c4c4c4;
+  letter-spacing: 3.6px;
+}
+
+.subscribe-hint {
+  margin: 0 0 0 auto;
+  padding-left: 33px;
+
+  background-image: url("../images/hint.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 /*КАТАЛОГ*/
 
 .catalog-header {
-  padding: 35px 0;
+  padding: 35px 0 34px;
 }
 
 .catalog-header-container {
@@ -1399,6 +1426,25 @@ img {
   gap: 40px;
 }
 
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+
+  display: block;
+  width: 4px;
+  height: 7px;
+  margin: 0 16px;
+
+  background-image: url("../images/breabcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 20px;
@@ -1406,8 +1452,25 @@ img {
   text-decoration: none;
 }
 
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.breadcrumbs-link-current {
+  pointer-events: none;
+}
+
 .catalog {
-  background-color: var(--basic-light);
+  background-color: #f0f0f0;
 }
 
 .catalog-container {
@@ -1417,11 +1480,13 @@ img {
 }
 
 .filter {
-  padding: 10px 40px 5px 60px;
+  padding: 25px 37px 5px 60px;
 }
 
 .filter-title,
 .sorting-title {
+  margin-bottom: 58px;
+
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
