@@ -229,14 +229,14 @@
                 <ul class="filter-list  list-reset">
                   <li class="filter-item">
                     <label class="filter-label" for="bluetooth-yes">
-                      <input class="filter-input" id="bluetooth-yes" name="bluetooth" type="radio" value="yes" checked>
+                      <input class="filter-input filter-input-radio" id="bluetooth-yes" name="bluetooth" type="radio" value="yes" checked>
                       <span class="filter-label-text">Есть</span>
                     </label>
                   </li>
 
                   <li class="filter-item">
                     <label class="filter-label" for="bluetooth-no">
-                      <input class="filter-input" id="bluetooth-no" name="bluetooth" type="radio" value="no">
+                      <input class="filter-input filter-input-radio" id="bluetooth-no" name="bluetooth" type="radio" value="no">
                       <span class="filter-label-text">Нет</span>
                     </label>
                   </li>
@@ -323,38 +323,38 @@
                   </a>
                 </li>
               </ul>
+              <a class="button button-more" href="#">Загрузить ещё</a>
+
+              <!--ПАГИНАЦИЯ-->
+              <div class="pagination">
+                <a class="pagination-button pagination-button-prev pagination-button-disabled">Назад</a>
+
+                <ul class="pagination-list list-reset">
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-link-current" href="#" aria-current="page">1</a>
+                  </li>
+
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                  </li>
+
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                  </li>
+
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-link-more" href="#" aria-label="Следующая страница">...</a>
+                  </li>
+
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">15</a>
+                  </li>
+                </ul>
+
+                <a class="pagination-button pagination-button-next">Вперёд</a>
+              </div>
             </div>
 
-            <a class="button button-more" href="#">Загрузить ещё</a>
-
-            <!--ПАГИНАЦИЯ-->
-            <div class="pagination">
-              <a class="pagination-button pagination-button-prev pagination-button-disabled">Назад</a>
-
-              <ul class="pagination-list list-reset">
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-link-current" href="#" aria-current="page">1</a>
-                </li>
-
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">2</a>
-                </li>
-
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">3</a>
-                </li>
-
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-link-more" href="#" aria-label="Следующая страница">...</a>
-                </li>
-
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">15</a>
-                </li>
-              </ul>
-
-              <a class="pagination-button pagination-button-next">Вперёд</a>
-            </div>
           </section>
         </div>
       </section>
