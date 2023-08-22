@@ -448,6 +448,69 @@
       </div>
     </footer>
 
+    <dialod class="modal modal-wrapper" aria-labelledby="modal-title">
+      <button class="button-modal-close">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
+
+      <section class="modal-container">
+        <h2 class="title modal-title" id="modal-title">Доставка под заказ</h2>
+
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="modal-fieldset-group modal-fieldset-name">
+            <label class="modal-form-label" for="modal-form-name">Ваше имя:
+              <input class="form-input modal-input modal-input-name" type="text" name="modal-form-name" id="modal-form-name" placeholder="Введите имя" required>
+              <span class="modal-form-notice">Добавьте имя</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="modal-fieldset-group modal-fieldset-email modal-fieldset-group-error">
+            <label class="modal-form-label" for="modal-form-email">Ваш e-mail:
+              <input class="form-input modal-input modal-input-email" type="email" name="modal-form-email" id="modal-form-email" value="почта" placeholder="Введите ваш e-mail" required>
+              <span class="modal-form-notice">Забавный у вас адрес</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="modal-fieldset-group modal-fieldset-group-text">
+            <label class="modal-form-label" for="modal-form-message">Что нужно привезти:
+              <textarea class="form-input modal-input modal-input-textarea" name="comment" id="modal-form-message" placeholder="В свободной форме"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset class="modal-fieldset-group modal-fieldset-counter">
+
+            <div class="modal-label-tooltip-container">
+              <label class="modal-form-label modal-form-label-tooltip" for="modal-form-counter">Количество</label>
+
+              <div class="modal-tooltip">
+                <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-products">
+                  <span class="visually-hidden">Подробнее</span>
+                </button>
+                <span class="modal-tooltip-text" role="tooltip" id="tooltip-products">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br>к провозу багажа.</span>
+              </div>
+            </div>
+
+            <span class="modal-form-counter-products">
+              <input class="form-input modal-input modal-input-number" id="modal-form-counter" name="quantity" type="number" min="1" max="999" step="1" value="1" required>
+
+              <button class="modal-button-edit modal-button-decr" type="button">
+                <span class="visually-hidden">Уменьшить число товаров на 1</span>
+              </button>
+              <button class="modal-button-edit modal-button-incr" type="button">
+                <span class="visually-hidden">Увеличить число товаров на 1</span>
+              </button>
+            </span>
+
+          </fieldset>
+
+          <button class="button button-line button-modal-submit" type="submit">Отправить</button>
+
+        </form>
+
+      </section>
+
+    </dialod>
+
   </body>
 
 </html>

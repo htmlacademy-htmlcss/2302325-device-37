@@ -2162,6 +2162,10 @@ img {
   color: #ffc700;
 }
 
+.footer-dev svg {
+  fill: currentColor;
+}
+
 .footer-dev:hover {
   background-color: #ffffff;
 }
