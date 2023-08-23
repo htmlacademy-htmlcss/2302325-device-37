@@ -366,7 +366,11 @@ img {
   flex-wrap: wrap;
   align-items: center;
 
-  gap: 20px;
+  gap: 17px;
+}
+
+.user-item {
+  padding: 5px 0;
 }
 
 .user-item:first-child {
@@ -382,8 +386,6 @@ img {
 
   background-repeat: no-repeat;
   background-position: center left;
-
-  gap: 36px;
 }
 
 .user-link:hover {
@@ -400,7 +402,7 @@ img {
 }
 
 .user-link-enter {
-  padding: 0;
+  padding: 0 8px;
 
   opacity: 0.3;
 }
@@ -428,7 +430,6 @@ img {
   left: 0;
   z-index: 1;
 
-  display: inline-block;
   min-width: 21px;
   padding: 2px;
 
@@ -462,6 +463,11 @@ img {
 }
 
 .cart-container-active {
+  display: none;
+}
+
+.user-item-cart:hover .cart-container,
+.user-item-cart:focus-within .cart-container {
   display: block;
 }
 
@@ -689,7 +695,8 @@ img {
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.nav-item-catalog:hover span::after {
+.nav-item-catalog:hover span::after,
+.nav-item-catalog:focus-within span::after {
   display: none;
 }
 
@@ -709,7 +716,8 @@ img {
   grid-template-columns: 222px repeat(auto-fill, minmax(135px, auto));
 }
 
-.nav-item-catalog:hover .submenu {
+.nav-item-catalog:hover .submenu,
+.nav-item-catalog:focus-within .submenu {
   display: grid;
 }
 
@@ -1339,20 +1347,20 @@ img {
 .title-subscribe {
   padding-left: 7px;
 
-  grid-column: 1 / span 2;
+  grid-column: span 2;
 }
 
 .text-subscribe {
   margin: 10px 0 0;
 
-  grid-column: span 2/-1;
+  grid-column: span 2;
 }
 
 .subscribe-form {
   display: grid;
   max-width: 810px;
 
-  grid-column: 1 / span 3;
+  grid-column: span 3;
   grid-template-columns: 1fr auto;
 }
 
@@ -1646,11 +1654,11 @@ img {
   appearance: none;
 }
 
-.filter-input:hover {
+.filter-label:hover {
   opacity: 0.6;
 }
 
-.filter-input:active {
+.filter-label:active {
   opacity: 0.3;
 }
 
@@ -1730,8 +1738,8 @@ img {
   background-color: transparent;
   background-image: url("../images/sorting-tick.svg");
   background-repeat: no-repeat;
-  background-position: right center;
-  border: 2px solid transparent;
+  background-position: center right 18px;
+  border: none;
   outline: none;
   cursor: pointer;
 
@@ -2017,10 +2025,8 @@ img {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #444444;
+  color: rgba(68, 68, 68, 0.3);
   text-decoration: none;
-
-  opacity: 0.3;
 }
 
 .pagination-link:hover {
@@ -2244,4 +2250,135 @@ img {
   left: -4px;
 
   border: 2px solid #af4fff;
+}
+
+/*Модальное окно*/
+
+.modal {
+  width: 920px;
+  padding: 0;
+
+  background-color: #ffffff;
+  border: 10px solid #000000;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal::backdrop {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+.button-modal-close {
+  position: absolute;
+  top: 74px;
+  right: 70px;
+
+  width: 26px;
+  height: 26px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-modal-close::after,
+.button-modal-close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 30px;
+  height: 3px;
+
+  background-color: #000000;
+  transform: translate(-50%, -50%);
+}
+
+.button-modal-close::before {
+  transform: rotate(45deg);
+}
+
+.button-modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-container {
+  padding: 64px 70px 60px;
+}
+
+.modal-title {
+  margin: 0 0 40px;
+}
+
+.modal-form {
+  display: grid;
+  justify-content: start;
+  align-items: baseline;
+
+  gap: 40px 9px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.modal-fieldset-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  grid-column: span 2;
+}
+
+.modal-fieldset-text {
+  max-width: 540px;
+
+  grid-column: span 3;
+}
+
+.modal-fieldset-counter {
+  max-width: 180px;
+
+  grid-column: span 1;
+}
+
+.modal-form-label {
+  margin-bottom: 14px;
+
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -0.36px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 60px;
+  padding: 10px 50px 10px 17px;
+
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: center right 18px;
+  border: 2px solid transparent;
+}
+
+.modal-input::placeholder {
+  opacity: 0.3;
+}
+
+.modal-input:hover {
+  background-color: #dcdcdc;
+}
+
+.modal-input:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.modal-input:disabled {
+  opacity: 0.3;
+
+  pointer-events: none;
 }
